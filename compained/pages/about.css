@@ -1,0 +1,11 @@
+.nid{
+    text-align: center;
+}
+.row d-flex{
+    padding-top: 10%;
+}
+
+.ert{
+    display: flex;
+    column-gap: 15%;
+}
