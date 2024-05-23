@@ -14,11 +14,11 @@ const app=http.createServer((req,res)=>{
     console.log(req.method);
     if(urlpath.pathname=="/"){
         res.writeHead(200,{"Content-Type":"text/html"})
-        res.end(fs.readFileSync("../client/index.html"))
+        res.end(fs.readFileSync("../compained/index.html"))
     }
     else if(urlpath.pathname=="/style.css"){
         res.writeHead(200,{"Content-Type":"text/css"})
-        res.end(fs.readFileSync("../client/style.css"))
+        res.end(fs.readFileSync("../compained/style.css"))
 
     }
     else if(urlpath.pathname=="/submit"&&req.method=="POST"){
@@ -40,7 +40,7 @@ const app=http.createServer((req,res)=>{
             })
         })
         res.writeHead(200,{"Content-Type":"text/html"})
-        res.end(fs.readFileSync("../client/index.html"))
+        res.end(fs.readFileSync("../compained/index.html"))
     }
 })
 client.connect().then(()=>{
